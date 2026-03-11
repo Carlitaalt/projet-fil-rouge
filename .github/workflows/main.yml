@@ -24,6 +24,7 @@ jobs:
         username: quai-antique-restaurante
         password: ${{ secrets.ftp_password }}
         protocol: ftps
+        secure: true
         local-dir: PARTIE FRONT END/Quai Antique Dev/
         server-dir: /www/
         exclude: |
