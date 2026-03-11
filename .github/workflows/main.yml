@@ -25,7 +25,7 @@ jobs:
         password: ${{ secrets.ftp_password }}
         protocol: ftp
         security: loose
-        port: 21
+        port: 990
         local-dir: PARTIE FRONT END/Quai Antique Dev/
         server-dir: /www/
         exclude: |
