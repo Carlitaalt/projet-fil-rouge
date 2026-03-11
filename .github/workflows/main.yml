@@ -1,5 +1,6 @@
-on : push
+on: push
 name: 🚀 Deploy website on push
+
 jobs:
   web-deploy:
     name: 🎉 Deploy
@@ -16,13 +17,13 @@ jobs:
     - name: 📂 Install npm dependencies
       run: npm install
       working-directory: "PARTIE FRONT END/Quai Antique Dev/"
-   
+
     - name: 📂 Deploy via SFTP
       uses: appleboy/scp-action@v0.1.4
       with:
         host: ssh-quai-antique-restaurante.alwaysdata.net
         username: quai-antique-restaurante
-        password: ${{ secrets.SSH_PASSWORD }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22
         source: "PARTIE FRONT END/Quai Antique Dev/*"
         target: /www/
