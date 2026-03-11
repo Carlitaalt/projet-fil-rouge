@@ -31,5 +31,5 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22
         source: "PARTIE FRONT END/Quai Antique Dev/*"
-        target: /www/
+        target: /home/quai-antique-restaurante/www/
         strip_components: 3
