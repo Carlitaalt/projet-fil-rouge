@@ -1,0 +1,69 @@
+<div class="hero-scene text-center text-white">
+    <div class="hero-scene-content">
+        <h1>Galerie</h1>
+    </div>
+</div>
+
+<div class="container">
+    <div class="text-center">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal" data-show="admin">Ajouter une photo</button>
+    </div>
+    <div class="row row-cols-2 row-cols-lg-3" id="allImages">
+    
+    </div>
+    <div class="text-center">
+        <button href="#" class="btn btn-primary">Réserver</button>
+    </div>
+</div>
+
+<!-- Modal Édition -->
+
+<div class="modal fade" id="EditionPhotoModal" tabindex="-1" aria-labelledby="EditionPhotoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="EditionPhotoModalLabel">Édition photo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="photoTitle" class="form-label">Titre de la photo</label>
+                        <input type="text" class="form-control" id="photoTitle" placeholder="Entrez le titre de la photo">
+                    </div>
+                    <div class="mb-3">
+                        <label for="photoFile" class="form-label">Choisir une photo</label>
+                        <input class="form-control" type="file" id="photoFile">
+                    </div>
+                    <div class="text-center">
+                        <button type="button" id="btnSavePhoto" class="btn btn-primary">Enregistrer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Suppression -->
+
+<div class="modal fade" id="DeletePhotoModal" tabindex="-1" aria-labelledby="DeletePhotoModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="DeletePhotoModalLabel">Êtes-vous sûr de vouloir supprimer la photo ?</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <p>Titre</p>
+                        <img src="../images/photo-galerie1.jpg" alt="Portrait galerie" class="rounded w-100" />
+                    </div>
+                    <div class="text-center">
+                        <button type="button" id="btnDeletePhoto" class="btn btn-danger">Supprimer</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>

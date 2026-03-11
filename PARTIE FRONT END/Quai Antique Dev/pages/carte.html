@@ -1,0 +1,156 @@
+<div class="hero-scene text-center text-white">
+    <div class="hero-scene-content">
+        <h1>Notre Carte</h1>
+        <p>Découvrez nos menus gastronomiques</p>
+    </div>
+</div>
+
+<div class="container py-5">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+        <!-- MENU 1 -->
+         <div class="col">
+            <div class="card menu-card h-100 shadow-sm">
+                <img src="/images/menu1.jpg" alt="menu découverte">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Menu Découverte</h5>
+                    <p class="card-text flex-grow-1">Entrée, Plat, Dessert <br>
+                    Produits de saison soigneusement sélectionnés.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="price">39€</span>
+                        <button class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#menuModal1">Voir détails</button>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+         <!-- MENU 2 -->
+        <div class="col">
+            <div class="card menu-card h-100 shadow-sm">
+                <img src="/images/menu2.jpg" alt="plat gastronomique">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Menu Gastronomique</h5>
+                    <p class="card-text flex-grow-1">Mise en bouche, Entrée, Plat, Fromage, Dessert.<br>
+                    Une expérience culinaire inoubliable.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="price">65€</span>
+                        <button class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#menuModal2">Voir détails</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MENU 3 -->
+        <div class="col">
+            <div class="card menu-card h-100 shadow-sm">
+                <img src="/images/menu3.jpg" alt="plat prestige">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Menu Prestige</h5>
+                    <p class="card-text flex-grow-1">Expérience complète en 7 temps, accords mets & vins.<br>
+                    Le summum de la gastronomie.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="price">95€</span>
+                        <button class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#menuModal3">Voir détails</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-5">
+        <button class="btn btn-primary">Réserver une table</button>
+    </div>
+</div>
+
+<!-- MODAL MENU 1 -->
+    <div class="modal fade" id="menuModal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Menu Découverte - 39€</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body row">
+                    <div class="col-md-5">
+                        <img src="/images/menu1.jpg" alt="Menu Découverte" class="w-100 rounded">
+                    </div>
+                    <div class="col-md-7">
+                        <p class="text-muted">Produits de saison soigneusement sélectionnés, sublimés par le chef Arnaud Michant.</p>
+                        <ul class="list-unstyled">
+                            <li><strong>Entrée</strong> - Velouté de butternut, crème de chèvre et noisettes torréfiées</li>
+                            <li class="mt-2"><strong>Plat</strong> - Filet de boeuf, jus corsé, légumes de saison rôtis</li>
+                            <li class="mt-2"><strong>Dessert</strong> - Fondant au chocolat noir, glace vanille bourbon</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <a href="/reserver" class="btn btn-primary">Réserver</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- MODAL MENU 2-->
+    <div class="modal fade" id="menuModal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Menu Gastronomique - 65€</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body row">
+                    <div class="col-md-5">
+                        <img src="/images/menu2.jpg" alt="Menu Gastronomique" class="w-100 rounded">
+                    </div>
+                    <div class="col-md-7">
+                        <p class="text-muted">Une expérience culinaire inoubliable en 5 temps, pensé pour les amateurs de grande cuisine.</p>
+                        <ul class="list-unstyled">
+                            <li><strong>Mise en bouche</strong> - Amuse-bouche du chef</li>
+                            <li class="mt-2"><strong>Entrée</strong> - Foie gras poêlé, chutney de figues et brioche maison</li>
+                            <li class="mt-2"><strong>Plat</strong> - Saint-Jacques snackées, risotto à l'encre de seiche</li>
+                            <li class="mt-2"><strong>Fromage</strong> - Sélection de fromages affinés de Savoie</li>
+                            <li class="mt-2"><strong>Dessert</strong> - Soufflé au Grand Marnier</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <a href="/reserver" class="btn btn-primary">Réserver</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- MODAL MENU 3 -->
+    <div class="modal fade" id="menuModal3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Menu Prestige - 95€</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body row">
+                    <div class="col-md-5">
+                        <img src="/images/menu3.jpg" alt="Menu Prestige" class="w-100 rounded">
+                    </div>
+                    <div class="col-md-7">
+                        <p class="text-muted">Le summum de la gastronomie. 7 temps d'exception avec accords mets & vins inclus.</p>
+                        <ul class="list-unstyled">
+                            <li><strong>Amuse-bouche</strong> - Trilogie de mises en bouche créatives</li>
+                            <li class="mt-2"><strong>Entrée froide</strong> - Tartare de langoustines, caviar et gelée de citron vert</li>
+                            <li class="mt-2"><strong>Entrée chaude</strong> - Bisque de homard, quenelle de beurre blanc</li>
+                            <li class="mt-2"><strong>Trou normand</strong> - Sorbet Calvados</li>
+                            <li class="mt-2"><strong>Plat</strong> - Filet de biche, sauce grand veneur, purée truffée</li>
+                            <li class="mt-2"><strong>Fromage</strong> - Plateau affiné, pain aux noix maison</li>
+                            <li class="mt-2"><strong>Dessert</strong> - Mille-feuille revisité à la vanille de Madagascar</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <a href="/reserver" class="btn btn-primary">Réserver</a>
+                </div>
+            </div>
+        </div>
+    </div>
