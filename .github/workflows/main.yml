@@ -15,22 +15,15 @@ jobs:
 
     - name: 📂 Install npm dependencies
       run: npm install
-      working-directory: PARTIE FRONT END/Quai Antique Dev/
+      working-directory: "PARTIE FRONT END/Quai Antique Dev/"
    
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+    - name: 📂 Deploy via SFTP
+      uses: appleboy/scp-action@v0.1.4
       with:
-        server: ftp-quai-antique-restaurante.alwaysdata.net
+        host: ssh-quai-antique-restaurante.alwaysdata.net
         username: quai-antique-restaurante
-        password: ${{ secrets.ftp_password }}
-        protocol: ftp
-        security: loose
-        port: 990
-        local-dir: PARTIE FRONT END/Quai Antique Dev/
-        server-dir: /www/
-        exclude: |
-          **/.git*
-          **/.git*/**
-          **/node_modules/bootstrap/scss/**
-          **/node_modules/bootstrap/js/**
-          **/node_modules/bootstrap-icons/icons/**
+        password: ${{ secrets.SSH_PASSWORD }}
+        port: 22
+        source: "PARTIE FRONT END/Quai Antique Dev/*"
+        target: /www/
+        strip_components: 3
